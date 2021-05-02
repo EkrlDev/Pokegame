@@ -26,3 +26,9 @@
     border-radius: 4px;
     margin-bottom: 1rem; 
 }
+
+.Pokedex-button:hover {
+    cursor: pointer;
+    background-color:#2ca9c2; 
+}
+

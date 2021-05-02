@@ -22,7 +22,7 @@ class Pokegame extends Component {
             time: 1
         }
     }
-
+    
     static defaultProps = {
         pokemon: [
             {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -108,8 +108,8 @@ class Pokegame extends Component {
                 <select className="Pokedex-button" onChange={(e) => this.setState({time: parseInt(e.target.value)})}>
                     <option value="1">1</option>
                     <option value="50">50</option>
+                    <option value="100">100</option>
                     <option value="1000">1000</option>
-                    <option value="50000">50000</option>
                 </select>
                 <button className="Pokedex-button" onClick={this.setBalance} disabled={this.state.rolling}>{this.state.rolling ? 'Rolling!' : 'Roll'}</button>
                 <p className="Pokedex">Your Balance: {this.state.balance}</p>
